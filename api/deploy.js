@@ -5,11 +5,11 @@ export default async function handler(req, res) {
     });
   }
 
-  const token = process.env.VERCEL_TOKEN;
+  const token = process.env.WINZ_TOKEN;
 
   if (!token) {
     return res.status(500).json({
-      error: "VERCEL_TOKEN belum diatur"
+      error: "WINZ_TOKEN belum diatur"
     });
   }
 
